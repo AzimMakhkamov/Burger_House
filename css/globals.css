@@ -58,6 +58,7 @@ ul {
     line-height: 1.5;
     background-color: #191411;
     color: white;
+    min-height: 100vh;
 }
 
 .container {
@@ -196,9 +197,9 @@ ul {
     line-height: 1;
 }
 
-/* section-center */
+/* section-why */
 
-section {
+.why {
     background-image: url("../images/main_bg_2.png");
     background-repeat: no-repeat;
     background-position: cover;
@@ -206,7 +207,7 @@ section {
     overflow: hidden;
 }
 
-.section-top {
+.why-top {
     text-align: center;
 }
 
@@ -218,7 +219,7 @@ section {
     margin-bottom: 60px;
 }
 
-.section-content {
+.why-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,7 +227,7 @@ section {
     padding: 0 32px 180px;
 }
 
-.card-image .section-image {
+.card-image .why-image {
     width: 100px;
     height: 100px;
 }
@@ -365,20 +366,20 @@ section {
     border-radius: 16px;
     height: 555px;
     width: 424px;
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    justify-content: space-between;
 }
 
-.order-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.order-form > * + * {
+    margin-top: 20px;
+}
+
+.order-title {
+    margin-bottom: 40px;
 }
 
 .order-label {
     border-radius: 8px;
+    width: 100%;
 }
 
 
@@ -406,6 +407,7 @@ section {
 }
 
 .button.primary {
+    width: 100%;
     font-size: 18px;
     line-height: 1;
     font-weight: 600;
